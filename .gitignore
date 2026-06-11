@@ -95,3 +95,6 @@ target/
 /notebooks/*
 
 .pdm-python
+
+# npy files
+*.npy
