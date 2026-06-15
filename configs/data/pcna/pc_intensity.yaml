@@ -1,11 +1,11 @@
 _target_: cyto_dl.datamodules.DataframeDatamodule
 _convert_: all
 
-path: ./morphology_appropriate_representation_learning/preprocessed_data/pcna/manifest.csv
+path: ./neutrophil_sdf_manifest.csv
 split_column: split
 
 batch_size: 32
-num_workers: 30
+num_workers: 4 # Changed it to 4 because of Mac but this used to be 30
 persistent_workers: true
 shuffle: false
 # we're not using fsspec for now so this isn't necessary
@@ -15,15 +15,27 @@ multiprocessing_context: fork # use for joblib
 transforms:
   - _target_: cyto_dl.dataframe.transforms.GroupCols
     groups:
-      pcloud: pointcloud_path
+      pcloud: point_cloud_path
+      # sdf: sdf_path
       cell_id: CellId
 
   - _target_: cyto_dl.point_cloud.io.ReadPointCloud
     keys: pcloud
     remote: false
     scale: 0.1
-    num_cols: 4
-    sample: 2048
+    num_cols: 3 # Used to be 4 but we're not using the fluorescence intensity
+    # sample: 2048
     norm: false
     flip_dims: true
     rotate: false
+
+  # 5. Transform Block B: Load the 4D SDF Query Arrays
+  - _target_: cyto_dl.point_cloud.io.ReadPointCloud
+    keys: sdf
+    remote: false
+    scale: 0.1
+    num_cols: 4     # Expects (X, Y, Z, SDF_Distance)
+    norm: false
+    flip_dims: true
+    rotate: false
+    # Delete sample cuz we have 4000 
