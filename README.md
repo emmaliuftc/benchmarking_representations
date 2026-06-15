@@ -1,3 +1,5 @@
+# See `fix-macos-xyz-training` branch for more details ^_^
+
 # Benchmarking Representations
 
 Code for training and benchmarking morphology appropriate representation learning methods, associated with the following manuscript.
