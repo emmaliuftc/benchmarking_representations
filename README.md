@@ -47,3 +47,43 @@ model.train()
 # Contact
 
 Allen Institute for Cell Science (cells@alleninstitute.org)
+
+# XYZ Point Cloud Setup on macOS
+
+Certain binary segmented XYZ datasets lack the intrinsic scalar feature channel; running the `pc_equiv` experiment on macOS requires a specific patched environment to prevent tensor shape mismatches and CPU segmentation faults (among other things).
+
+## 1. Library Prerequisite
+You should install the matching patched version of the `cyto-dl` core library in its feature branch:
+
+```bash
+pip install git+https://github.com/emmaliuftc/cyto-dl.git@fix-macos-xyz-training
+```
+
+## 2. Execution Command
+
+```bash
+export MKL_DEBUG=1 \
+       MKL_NUM_THREADS=1 \
+       OMP_NUM_THREADS=1 \
+       VECLIB_MAXIMUM_THREADS=1 \
+       OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+python -X faulthandler -m cyto_dl.train \
+    --config-dir $(pwd)/configs \
+    experiment=pcna/pc_equiv \
+    trainer=cpu \
+    trainer.accelerator=cpu \
+    trainer.devices=1 \
+    trainer.log_every_n_steps=1 \
+    data.batch_size=1 \
+    data.num_workers=0 \
+    data.persistent_workers=False \
+    data.multiprocessing_context=null \
+    'model.reconstruction_loss={pcloud: {_target_: cyto_dl.nn.losses.GeomLoss, p: 1, blur: 0.01}}'
+```
+
+Flag explanations:
+- `MKL/OMP/VECLIB environment variables`: Disables parallelized CPU matrix math blocks to prevent macOS architecture segmentation faults during graph calculations.
+- `trainer.log_every_n_steps=1`: Forces PyTorch Lightning to log evaluation metrics on every single step rather than defaulting to 50, allowing real-time tracking for small micro-batches.
+- `data.batch_size=1`: Matches single-sample tensor allocations for steady training steps.
+- `data.num_workers=0`: Forces the dataset to load directly on the main execution thread, bypassing the unsafe process-forking behaviors native to Python on macOS.
