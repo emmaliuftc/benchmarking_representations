@@ -1,0 +1,225 @@
+Analysis Results for 001:
+1. Border voxel is True: True
+2. Total size of array:  (42, 360, 301) voxels
+3. Bounding box size:    (26, 301, 255) voxels
+4. Bounding box:         (0, 31, 20, 26, 332, 275)
+Analysis Results for 002:
+1. Border voxel is True: True
+2. Total size of array:  (42, 376, 298) voxels
+3. Bounding box size:    (32, 276, 240) voxels
+4. Bounding box:         (0, 54, 24, 32, 330, 264)
+Analysis Results for 003:
+1. Border voxel is True: True
+2. Total size of array:  (42, 342, 364) voxels
+3. Bounding box size:    (29, 266, 281) voxels
+4. Bounding box:         (0, 47, 43, 29, 313, 324)
+Analysis Results for 004:
+1. Border voxel is True: True
+2. Total size of array:  (42, 359, 348) voxels
+3. Bounding box size:    (34, 273, 246) voxels
+4. Bounding box:         (0, 47, 57, 34, 320, 303)
+Analysis Results for 005:
+1. Border voxel is True: True
+2. Total size of array:  (42, 310, 358) voxels
+3. Bounding box size:    (34, 271, 264) voxels
+4. Bounding box:         (0, 33, 44, 34, 304, 308)
+Analysis Results for 008:
+1. Border voxel is True: True
+2. Total size of array:  (42, 244, 370) voxels
+3. Bounding box size:    (33, 196, 280) voxels
+4. Bounding box:         (0, 0, 43, 33, 196, 323)
+Analysis Results for 009:
+1. Border voxel is True: True
+2. Total size of array:  (42, 281, 348) voxels
+3. Bounding box size:    (28, 204, 264) voxels
+4. Bounding box:         (0, 43, 40, 28, 247, 304)
+Analysis Results for 010:
+1. Border voxel is True: True
+2. Total size of array:  (56, 289, 271) voxels
+3. Bounding box size:    (44, 164, 220) voxels
+4. Bounding box:         (0, 48, 31, 44, 212, 251)
+Analysis Results for 011:
+1. Border voxel is True: True
+2. Total size of array:  (56, 329, 341) voxels
+3. Bounding box size:    (40, 232, 267) voxels
+4. Bounding box:         (0, 45, 42, 40, 277, 309)
+Analysis Results for 012:
+1. Border voxel is True: True
+2. Total size of array:  (56, 289, 361) voxels
+3. Bounding box size:    (52, 215, 263) voxels
+4. Bounding box:         (0, 38, 45, 52, 253, 308)
+Analysis Results for 014:
+1. Border voxel is True: True
+2. Total size of array:  (56, 298, 314) voxels
+3. Bounding box size:    (38, 256, 239) voxels
+4. Bounding box:         (0, 26, 36, 38, 282, 275)
+Analysis Results for 015:
+1. Border voxel is True: True
+2. Total size of array:  (56, 313, 315) voxels
+3. Bounding box size:    (40, 220, 217) voxels
+4. Bounding box:         (0, 49, 38, 40, 269, 255)
+Analysis Results for 016:
+1. Border voxel is True: True
+2. Total size of array:  (56, 287, 363) voxels
+3. Bounding box size:    (50, 195, 283) voxels
+4. Bounding box:         (0, 34, 45, 50, 229, 328)
+Analysis Results for 017:
+1. Border voxel is True: True
+2. Total size of array:  (56, 340, 229) voxels
+3. Bounding box size:    (50, 212, 153) voxels
+4. Bounding box:         (0, 63, 27, 50, 275, 180)
+Analysis Results for 018:
+1. Border voxel is True: True
+2. Total size of array:  (56, 353, 362) voxels
+3. Bounding box size:    (52, 304, 284) voxels
+4. Bounding box:         (0, 20, 29, 52, 324, 313)
+Analysis Results for 019:
+1. Border voxel is True: True
+2. Total size of array:  (56, 352, 321) voxels
+3. Bounding box size:    (41, 289, 255) voxels
+4. Bounding box:         (0, 42, 28, 41, 331, 283)
+Analysis Results for 020:
+1. Border voxel is True: True
+2. Total size of array:  (37, 313, 303) voxels
+3. Bounding box size:    (31, 268, 270) voxels
+4. Bounding box:         (0, 31, 17, 31, 299, 287)
+Analysis Results for 022:
+1. Border voxel is True: True
+2. Total size of array:  (37, 335, 308) voxels
+3. Bounding box size:    (27, 259, 262) voxels
+4. Bounding box:         (0, 49, 22, 27, 308, 284)
+Analysis Results for 023:
+1. Border voxel is True: True
+2. Total size of array:  (37, 323, 271) voxels
+3. Bounding box size:    (29, 284, 227) voxels
+4. Bounding box:         (0, 19, 9, 29, 303, 236)
+Analysis Results for 024:
+1. Border voxel is True: True
+2. Total size of array:  (37, 350, 334) voxels
+3. Bounding box size:    (31, 299, 297) voxels
+4. Bounding box:         (0, 28, 34, 31, 327, 331)
+Analysis Results for 025:
+1. Border voxel is True: True
+2. Total size of array:  (37, 321, 249) voxels
+3. Bounding box size:    (34, 242, 188) voxels
+4. Bounding box:         (0, 41, 22, 34, 283, 210)
+Analysis Results for 026:
+1. Border voxel is True: True
+2. Total size of array:  (37, 330, 269) voxels
+3. Bounding box size:    (34, 295, 235) voxels
+4. Bounding box:         (0, 25, 20, 34, 320, 255)
+Analysis Results for 027:
+1. Border voxel is True: True
+2. Total size of array:  (37, 315, 297) voxels
+3. Bounding box size:    (29, 275, 227) voxels
+4. Bounding box:         (0, 27, 39, 29, 302, 266)
+Analysis Results for 030:
+1. Border voxel is True: True
+2. Total size of array:  (37, 313, 312) voxels
+3. Bounding box size:    (32, 253, 279) voxels
+4. Bounding box:         (0, 27, 22, 32, 280, 301)
+Analysis Results for 031:
+1. Border voxel is True: True
+2. Total size of array:  (37, 222, 334) voxels
+3. Bounding box size:    (27, 180, 292) voxels
+4. Bounding box:         (0, 28, 19, 27, 208, 311)
+Analysis Results for 032:
+1. Border voxel is True: True
+2. Total size of array:  (45, 287, 395) voxels
+3. Bounding box size:    (28, 198, 345) voxels
+4. Bounding box:         (0, 47, 21, 28, 245, 366)
+Analysis Results for 033:
+1. Border voxel is True: False
+2. Total size of array:  (45, 374, 340) voxels
+3. Bounding box size:    (27, 275, 274) voxels
+4. Bounding box:         (1, 46, 22, 28, 321, 296)
+Analysis Results for 034:
+1. Border voxel is True: True
+2. Total size of array:  (45, 317, 295) voxels
+3. Bounding box size:    (32, 255, 255) voxels
+4. Bounding box:         (0, 32, 29, 32, 287, 284)
+Analysis Results for 035:
+1. Border voxel is True: True
+2. Total size of array:  (45, 273, 425) voxels
+3. Bounding box size:    (29, 176, 379) voxels
+4. Bounding box:         (0, 56, 20, 29, 232, 399)
+Analysis Results for 036:
+1. Border voxel is True: False
+2. Total size of array:  (45, 294, 321) voxels
+3. Bounding box size:    (30, 238, 253) voxels
+4. Bounding box:         (2, 29, 40, 32, 267, 293)
+Analysis Results for 037:
+1. Border voxel is True: True
+2. Total size of array:  (45, 279, 298) voxels
+3. Bounding box size:    (31, 245, 238) voxels
+4. Bounding box:         (0, 15, 27, 31, 260, 265)
+Analysis Results for 038:
+1. Border voxel is True: True
+2. Total size of array:  (45, 330, 275) voxels
+3. Bounding box size:    (26, 283, 239) voxels
+4. Bounding box:         (0, 9, 5, 26, 292, 244)
+Analysis Results for 039:
+1. Border voxel is True: True
+2. Total size of array:  (45, 323, 392) voxels
+3. Bounding box size:    (31, 271, 309) voxels
+4. Bounding box:         (0, 30, 26, 31, 301, 335)
+Analysis Results for 040:
+1. Border voxel is True: True
+2. Total size of array:  (45, 230, 341) voxels
+3. Bounding box size:    (31, 187, 273) voxels
+4. Bounding box:         (0, 17, 36, 31, 204, 309)
+Analysis Results for 041:
+1. Border voxel is True: True
+2. Total size of array:  (45, 349, 292) voxels
+3. Bounding box size:    (28, 301, 245) voxels
+4. Bounding box:         (0, 27, 30, 28, 328, 275)
+Analysis Results for 042:
+1. Border voxel is True: True
+2. Total size of array:  (39, 375, 299) voxels
+3. Bounding box size:    (28, 285, 241) voxels
+4. Bounding box:         (0, 38, 27, 28, 323, 268)
+Analysis Results for 043:
+1. Border voxel is True: True
+2. Total size of array:  (39, 268, 400) voxels
+3. Bounding box size:    (26, 212, 328) voxels
+4. Bounding box:         (0, 32, 31, 26, 244, 359)
+Analysis Results for 044:
+1. Border voxel is True: True
+2. Total size of array:  (39, 261, 248) voxels
+3. Bounding box size:    (28, 239, 209) voxels
+4. Bounding box:         (0, 12, 17, 28, 251, 226)
+Analysis Results for 045:
+1. Border voxel is True: True
+2. Total size of array:  (39, 248, 361) voxels
+3. Bounding box size:    (26, 215, 331) voxels
+4. Bounding box:         (0, 18, 19, 26, 233, 350)
+Analysis Results for 046:
+1. Border voxel is True: True
+2. Total size of array:  (39, 305, 350) voxels
+3. Bounding box size:    (29, 282, 303) voxels
+4. Bounding box:         (0, 18, 34, 29, 300, 337)
+Analysis Results for 047:
+1. Border voxel is True: True
+2. Total size of array:  (39, 348, 278) voxels
+3. Bounding box size:    (28, 336, 268) voxels
+4. Bounding box:         (0, 0, 10, 28, 336, 278)
+Analysis Results for 048:
+1. Border voxel is True: False
+2. Total size of array:  (39, 255, 286) voxels
+3. Bounding box size:    (24, 228, 253) voxels
+4. Bounding box:         (5, 14, 18, 29, 242, 271)
+Analysis Results for 049:
+1. Border voxel is True: True
+2. Total size of array:  (39, 362, 311) voxels
+3. Bounding box size:    (30, 310, 253) voxels
+4. Bounding box:         (0, 38, 18, 30, 348, 271)
+Analysis Results for 050:
+1. Border voxel is True: True
+2. Total size of array:  (39, 369, 284) voxels
+3. Bounding box size:    (30, 320, 246) voxels
+4. Bounding box:         (0, 26, 20, 30, 346, 266)
+Analysis Results for 051:
+1. Border voxel is True: True
+2. Total size of array:  (39, 303, 351) voxels
+3. Bounding box size:    (29, 255, 330) voxels
+4. Bounding box:         (0, 36, 3, 29, 291, 333)
