@@ -1,5 +1,6 @@
 _target_: pointcloudutils.datamodules.ShapenetDataModule
-dataset_folder: ./morphology_appropriate_representation_learning/preprocessed_data/npm1/pointcloud/
+# dataset_folder: ./morphology_appropriate_representation_learning/preprocessed_data/npm1/pointcloud/
+dataset_folder: /scratch/mola/eml057/cytodl_workspace/data/shapenet_format/
 method: shapenet_dfnet
 dataset_type: pointcloud
 train_split: train
@@ -18,7 +19,7 @@ return_idx: true
 train_rotate: true
 train_translate: false
 train_single_trans: false
-batch_size: 4
-num_workers: 16
+batch_size: 4 # Can change to according to GPU VRAM
+num_workers: 16 # Can change to CPU cores
 multi_files: null
 x_label: pcloud
