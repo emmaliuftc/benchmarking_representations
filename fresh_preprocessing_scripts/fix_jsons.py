@@ -34,10 +34,10 @@ input_dir = "/scratch/mola/eml057/cytodl_workspace/data/point_clouds/"
 base_dir = "/scratch/mola/eml057/cytodl_workspace/data/shapenet_format/00000000/"
 
 # Find all original SDF .npy files
-sdf_files = glob.glob(os.path.join(input_dir, "*_sdf_20000.npy"))
+sdf_files = glob.glob(os.path.join(input_dir, "*_sdf_40000.npy"))
 
 for sdf_path in sdf_files:
-    # Extract the ID (e.g., "041" from "041_sdf_20000.npy")
+    # Extract the ID (e.g., "041" from "041_sdf_40000.npy")
     file_id = os.path.basename(sdf_path).split('_')[0]
     
     # Define the target instance directory
@@ -48,8 +48,8 @@ for sdf_path in sdf_files:
         target_path = os.path.join(instance_dir, "df.npy")
         shutil.copy(sdf_path, target_path)
         
-print("Successfully copied all SDF arrays as df.npy!")
- """
+print(f"Successfully copied {len(sdf_files)} SDF arrays as df.npy!") """
+
 
 
 # import os
@@ -85,7 +85,7 @@ print("Successfully copied all SDF arrays as df.npy!")
 
 
 
-""" import os
+import os
 import numpy as np
 
 base_dir = "/scratch/mola/eml057/cytodl_workspace/data/shapenet_format/00000000/"
@@ -97,17 +97,18 @@ for inst in os.listdir(base_dir):
         
     df_path = os.path.join(inst_dir, "df.npy")
     if os.path.exists(df_path):
-        # Load the 4D array (20000, 4)
+        # Load the 4D array (40000, 4)
         df_arr = np.load(df_path)
         
         # If it's still 4D, slice it to keep ONLY the first column (the SDF values)
         if len(df_arr.shape) > 1 and df_arr.shape[1] == 4:
             # Slice column 0 and ensure it's a 32-bit float
             sdf_only = df_arr[:, 0].astype(np.float32)
-            
+            sdf_clipped = np.clip(sdf_only, -2.0, 2.0)
             # Save it back as a 1D array of shape (20000,)
-            np.save(df_path, sdf_only)
+            np.save(df_path, sdf_clipped)
+            print(sdf_clipped.shape)
 
-print("Successfully isolated SDF values in df.npy!") """
+print("Successfully isolated SDF values in df.npy!")
 
 

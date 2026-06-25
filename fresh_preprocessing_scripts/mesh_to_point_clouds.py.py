@@ -10,8 +10,13 @@ files = glob.glob(os.path.join(data_dir, "*.stl"))
 files.sort()
 
 # Define sample sizes
-NUM_SURFACE_POINTS = 8192
-NUM_SDF_POINTS = 20000
+
+# NUM_SURFACE_POINTS = 8192
+# NUM_SDF_POINTS = 20000
+
+NUM_SURFACE_POINTS = 16384
+NUM_SDF_POINTS = 40000
+
 
 for f in files:
     file_id = os.path.basename(f).split('.')[0]
