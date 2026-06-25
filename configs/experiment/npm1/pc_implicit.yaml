@@ -42,10 +42,15 @@ callbacks:
     every_n_epochs: 1
 
 logger:
-  csv:
+  # csv:
+  #   save_dir: ./npm1_variance
+  #   name: "pc_implicit"
+  #   prefix:
+  wandb:
+    _target_: lightning.pytorch.loggers.WandbLogger
+    project: "polymorphic-sdf"
+    name: "npm1_run_01"
     save_dir: ./npm1_variance
-    name: "pc_implicit"
-    prefix:
 
 # ##### ONLY USE WITH A100s
 # extras:
