@@ -6,6 +6,8 @@ hparams.yaml
 
 **/wandb/
 
+*.stl
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
